@@ -16,6 +16,7 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -168,117 +169,117 @@ button:hover {
 /* MEMBERSHIP PLANS */
 
 .training-options {
-    background-color: var(--hero-header-text);
-    text-align: center;
-    padding: 80px 12%;
+  background-color: var(--hero-header-text);
+  text-align: center;
+  padding: 80px 12%;
 }
 
 .training-types {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--main-text);
-    border-radius: 0 0 12px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--main-text);
+  border-radius: 0 0 12px 12px;
 }
 
 .training-options h2 {
-    background-color: var(--main-text);
-    font-size: 36px;
-    color: var(--hero-header-text);
-    padding: 20px 0;
-    border-radius: 12px 12px 0 0;
+  background-color: var(--main-text);
+  font-size: 36px;
+  color: var(--hero-header-text);
+  padding: 20px 0;
+  border-radius: 12px 12px 0 0;
 }
 
 
 aside {
-    width: 350px;
-    padding: 40px;
-    text-align: center;
-    color: var(--hero-header-text);
+  width: 350px;
+  padding: 40px;
+  text-align: center;
+  color: var(--hero-header-text);
 }
 
 aside h3 {
-    font-size: 24px;
-    margin: 30px 0 30px;
+  font-size: 24px;
+  margin: 30px 0 30px;
 }
 
 .btn-classes {
-    margin: 15px 0;
+  margin: 15px 0;
 }
 
 /*PLAN CARDS*/
 
 .plans {
-    background-color: var(--hero-header-text);
-    text-align: center;
-    padding: 80px 12%;
+  background-color: var(--hero-header-text);
+  text-align: center;
+  padding: 80px 12%;
 }
 
 .plans>h2 {
-    font-size: 36px;
-    color: var(--main-text);
-    margin-bottom: 10px;
+  font-size: 36px;
+  color: var(--main-text);
+  margin-bottom: 10px;
 }
 
 .plans>p {
-    max-width: 650px;
-    margin: 0 auto 50px;
-    color: var(--main-text);
-    font-size: 18px;
+  max-width: 650px;
+  margin: 0 auto 50px;
+  color: var(--main-text);
+  font-size: 18px;
 }
 
 .plan-cards {
-    display: flex;
-    justify-content: center;
-    gap: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
 }
 
 .plan-card {
-    width: 350px;
-    padding: 40px;
-    border: 2px solid var(--main-text);
-    border-radius: 12px;
-    text-align: center;
-    background-color: var(--hero-header-text);
+  width: 350px;
+  padding: 40px;
+  border: 2px solid var(--main-text);
+  border-radius: 12px;
+  text-align: center;
+  background-color: var(--hero-header-text);
 }
 
 .plan-card h3 {
-    font-size: 24px;
-    color: var(--main-text);
-    margin-bottom: 8px;
+  font-size: 24px;
+  color: var(--main-text);
+  margin-bottom: 8px;
 }
 
 .plan-offer {
-    color: var(--btn-text-color);
-    font-weight: bold;
-    margin-bottom: 20px;
+  color: var(--btn-text-color);
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .plan-price {
-    color: var(--secondary-color);
-    margin-bottom: 25px;
+  color: var(--secondary-color);
+  margin-bottom: 25px;
 }
 
 .plan-price span {
-    display: block;
-    color: var(--main-text);
-    font-size: 42px;
-    font-weight: bold;
+  display: block;
+  color: var(--main-text);
+  font-size: 42px;
+  font-weight: bold;
 }
 
 .plan-card ul {
-    margin: 40px 0 80px 0;
-    color: var(--main-text);
+  margin: 40px 0 80px 0;
+  color: var(--main-text);
 }
 
 .plan-card li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .plan-img {
-    width: 400px;
-    height: 600px;
-    border-radius: 10px;
+  width: 400px;
+  height: 600px;
+  border-radius: 10px;
 }
 
 /*CTA */
@@ -316,7 +317,7 @@ aside h3 {
 
 /* FOOTER */
 
-body > footer {
+body>footer {
   background-color: var(--main-text);
   color: var(--secondary-color);
   text-align: center;
@@ -373,15 +374,15 @@ body > footer {
   gap: 70px;
 }
 
-.about-story > * {
+.about-story>* {
   flex: 1 1 0;
 }
 
-.about-story > :first-child {
+.about-story> :first-child {
   flex: 0.8 1 0;
 }
 
-.about-story > :last-child {
+.about-story> :last-child {
   flex: 1.2 1 0;
 }
 
@@ -416,8 +417,8 @@ body > footer {
   gap: 24px;
 }
 
-.trust-grid > *,
-.trainer-grid > * {
+.trust-grid>*,
+.trainer-grid>* {
   flex: 1 1 calc((100% - 48px) / 3);
 }
 
@@ -481,9 +482,11 @@ body > footer {
 .trainer-card h3 {
   margin-top: 8px;
 }
+
 .disclaimer {
   text-align: center;
 }
+
 .about-cta {
   align-items: center;
   background-color: var(--btn-text-color);
@@ -513,7 +516,7 @@ body > footer {
   color: var(--btn-text-color);
 }
 
-body > footer p {
+body>footer p {
   margin: 10px 0;
 }
 
@@ -534,6 +537,7 @@ body > footer p {
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
+
   header,
   .hero {
     padding-left: 6%;
@@ -562,12 +566,14 @@ body > footer p {
   .class-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem; /* optional spacing */
+    gap: 1rem;
+    /* optional spacing */
     padding: 0 6%;
   }
 
-  .class-cards > * {
-    flex: 1 1 50%; /* two columns */
+  .class-cards>* {
+    flex: 1 1 50%;
+    /* two columns */
   }
 
   .card-info img,
@@ -610,7 +616,7 @@ body > footer p {
     flex-wrap: wrap;
   }
 
-  .trainer-grid > * {
+  .trainer-grid>* {
     flex-basis: calc((100% - 24px) / 2);
   }
 
@@ -626,238 +632,581 @@ body > footer p {
 }
 
 @media (max-width: 600px) {
+
   header,
   .hero,
   .class-cards,
   .cta {
     flex-direction: column;
   }
+}
 
-  header,
-  .hero {
-    padding: 20px 6%;
-  }
+header,
+.hero {
+  padding: 20px 6%;
+}
 
-  header {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
+header {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
 
 .footer-nav a:hover {
-    color: var(--btn-text-color);
+  color: var(--btn-text-color);
 }
 
 
 
 /*CLASSES PAGE*/
 
-.hero-images {
-    display: flex;
-    flex-direction: row;
+
+/* HERO */
+
+.classes-page .hero-images {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: hidden;
 }
 
-.hero-images img {
+.classes-page .hero-images img {
+  width: 25%;
+  height: 500px;
+  object-fit: cover;
+  opacity: 0.5;
+  min-width: 0;
+}
+
+.classes-page .hero-classes {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.classes-page .hero-classes-content {
+  display: block;
+  position: relative;
+  bottom: 320px;
+  padding: 0 30% 0 10%;
+  color: var(--main-text);
+}
+
+
+/* 
+   CLASSES SECTION
+   */
+
+.classes-page .class-title {
+  background-color: var(--main-text);
+  text-align: center;
+  padding: 5% 0 12% 0;
+  color: var(--hero-header-text);
+}
+
+.classes-page .class-title h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.classes-page .class-title p {
+  font-size: 18px;
+}
+
+.classes-page .cards-classes,
+.classes-page .class-details {
+  display: flex;
+}
+
+.classes-page .cards-classes {
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.classes-page .cards-classes>a,
+.classes-page .class-info {
+  min-width: 0;
+}
+
+.classes-page .cards-classes img {
+  width: 500px;
+  height: 500px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.classes-page .strength-training {
+  flex-direction: row-reverse;
+}
+
+.classes-page .class-info {
+  width: 500px;
+  max-width: 100%;
+  padding: 30px 0;
+  text-align: start;
+}
+
+.classes-page .strength-class {
+  text-align: right;
+}
+
+.classes-page .class-info h3 {
+  font-size: 24px;
+}
+
+.classes-page .class-details {
+  flex-direction: column;
+  gap: 40px;
+}
+
+.classes-page .class-info button {
+  margin-top: 40px;
+}
+
+
+/* 
+   SCHEDULE SECTION
+  */
+
+.classes-page .schedule-section {
+  background-color: var(--hero-header-text);
+}
+
+.classes-page .schedule-heading {
+  text-align: center;
+  padding: 8% 0;
+}
+
+.classes-page .inperson-heading,
+.classes-page .classes-types {
+  background-color: var(--main-text);
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  padding: 5%;
+}
+
+.classes-page .inperson-heading h2,
+.classes-page .classes-types h2,
+.classes-page .inperson-heading p,
+.classes-page .classes-types p {
+  min-width: 0;
+}
+
+.classes-page .inperson-heading p,
+.classes-page .classes-types p {
+  width: 400px;
+  max-width: 100%;
+}
+
+.classes-page .schedule-grid {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  border: 1px solid var(--secondary-color);
+}
+
+.classes-page .schedule-day {
+  width: 20%;
+  min-width: 0;
+  background-color: var(--hero-header-text);
+  border-right: 1px solid var(--secondary-color);
+}
+
+.classes-page .schedule-day:last-child {
+  border-right: none;
+}
+
+.classes-page .schedule-day>h3 {
+  background-color: var(--main-text);
+  color: var(--hero-header-text);
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.classes-page .class-session {
+  padding: 20px 15px;
+  min-height: 240px;
+  min-width: 0;
+  border-bottom: 1px solid var(--secondary-color);
+  overflow-wrap: break-word;
+}
+
+.classes-page .class-session:last-child {
+  border-bottom: none;
+}
+
+.classes-page .class-time {
+  color: var(--btn-text-color);
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.classes-page .class-session h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: var(--main-text);
+}
+
+.classes-page .class-session p {
+  color: var(--main-text);
+  margin-bottom: 5px;
+}
+
+.classes-page .spots {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.classes-page .schedule-button {
+  display: block;
+  background-color: var(--btn-text-color);
+  color: var(--hero-header-text);
+  text-align: center;
+  padding: 9px;
+  margin-top: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.classes-page .schedule-button:hover {
+  background-color: var(--main-text);
+}
+
+
+/*
+   SMALL DESKTOP
+   901px - 1460px
+  */
+
+@media (min-width: 901px) and (max-width: 1460px) {
+
+  /* HERO */
+
+  .classes-page .hero-classes {
     width: 100%;
     height: 500px;
-    object-fit: cover;
-    opacity: 0.5;
-}
+    overflow: hidden;
+  }
 
-.hero-classes {
-    max-width: stretch;
+  .classes-page .hero-images {
+    width: 100%;
+  }
+
+  .classes-page .hero-images img {
+    width: 25%;
     height: 500px;
-}
+    min-width: 0;
+  }
 
-.hero-classes-content {
-    display: block;
-    position: relative;
+  .classes-page .hero-classes-content {
     bottom: 320px;
-    padding: 0 30% 0 10%;
-    color: var(--main-text);
-}
+    padding: 0 12%;
+  }
 
-/* CLASSES SECTION */
 
-.class-title {
-    background-color: var(--main-text);
-    text-align: center;
-    padding: 5% 0 12% 0;
-    color: var(--hero-header-text);
-}
+  /* TITLE */
 
-.class-title h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
+  .classes-page .class-title {
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
 
-.class-title p {
-    font-size: 18px;
-}
 
-.cards-classes,
-.class-details {
-    display: flex;
-}
+  /* CLASS CARDS */
 
-.cards-classes {
-    justify-content: center;
-    gap: 20px;
-    margin: 20px;
-    text-align: center;
-}
+  .classes-page .cards-classes {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    gap: 30px;
+  }
 
-.cards-classes img {
-    width: 500px;
-    height: 500px;
-    border-radius: 10px;
-}
+  .classes-page .cards-classes>a,
+  .classes-page .class-info {
+    width: 50%;
+    min-width: 0;
+  }
 
-.strength-training {
-    flex-direction: row-reverse;
-}
+  .classes-page .cards-classes img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+  }
 
-.class-info {
-    width: 500px;
+  .classes-page .class-info {
     padding: 30px 0;
-    text-align: start;
+  }
+
+
+  /* SCHEDULE HEADINGS */
+
+  .classes-page .inperson-heading,
+  .classes-page .classes-types {
+    width: 100%;
+    padding: 5% 8%;
+  }
+
+  .classes-page .inperson-heading p,
+  .classes-page .classes-types p {
+    width: 45%;
+  }
+
+
+  /* SCHEDULE */
+
+  .classes-page .schedule-grid {
+    width: 90%;
+    max-width: 1100px;
+  }
+
+  .classes-page .schedule-day {
+    min-width: 0;
+  }
 }
 
-.strength-class {
-    text-align: right;
-}
 
-.class-info h3 {
-    font-size: 24px;
-}
+/* 
+   TABLET
+   601px - 900px
+    */
 
-.class-details {
+@media (min-width: 601px) and (max-width: 900px) {
+
+  /* HERO */
+
+  .classes-page .hero-images {
+    flex-wrap: wrap;
+  }
+
+  .classes-page .hero-images img {
+    width: 50%;
+    height: 250px;
+  }
+
+  .classes-page .hero-classes {
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .classes-page .hero-classes-content {
+    bottom: 330px;
+    padding: 0 10%;
+  }
+
+
+  /* CLASS CARDS */
+
+  .classes-page .cards-classes {
     flex-direction: column;
-    gap: 40px;
-}
+    align-items: center;
 
-.class-info button {
-    margin-top: 40px;
-}
+    width: calc(100% - 60px);
+    max-width: 700px;
 
-/*SCHEDULE SECTION*/
+    margin: 40px auto;
+  }
 
-.schedule-section {
-    background-color: var(--hero-header-text);
-}
+  .classes-page .strength-training {
+    flex-direction: column;
+  }
 
-.schedule-heading {
-    text-align: center;
-    padding: 8% 0;
-}
+  .classes-page .cards-classes>a,
+  .classes-page .class-info {
+    width: 100%;
+    max-width: 700px;
+  }
 
-.inperson-heading,
-.classes-types {
-    background-color: var(--main-text);
-    color: var(--secondary-color);
-    display: flex;
-    justify-content: space-around;
-    gap: 40px;
-    padding: 5%;
-}
+  .classes-page .cards-classes img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
 
-.inperson-heading p,
-.classes-types p {
-    width: 400px;
-}
+  .classes-page .class-info {
+    padding: 25px 0;
+    text-align: left;
+  }
 
-.schedule-grid {
-    display: flex;
-    max-width: 1200px;
-    margin: auto;
-    border: 1px solid var(--secondary-color);
-}
+  .classes-page .strength-class {
+    text-align: left;
+  }
 
-.schedule-day {
-    width: 20%;
-    background-color: var(--hero-header-text);
-    border-right: 1px solid var(--secondary-color);
-}
 
-.schedule-day:last-child {
-    border-right: none;
-}
+  /* SCHEDULE HEADINGS */
 
-.schedule-day>h3 {
-    background-color: var(--main-text);
-    color: var(--hero-header-text);
-    text-align: center;
-    padding: 15px;
-    font-size: 18px;
-}
+  .classes-page .inperson-heading,
+  .classes-page .classes-types {
+    padding: 40px 8%;
+  }
 
-.class-session {
-    padding: 20px 15px;
-    min-height: 240px;
-    border-bottom: 1px solid var(--secondary-color);
-}
+  .classes-page .inperson-heading p,
+  .classes-page .classes-types p {
+    width: 50%;
+  }
 
-.class-session:last-child {
-    border-bottom: none;
-}
 
-.class-time {
-    color: var(--btn-text-color);
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 8px;
-}
+  /* SCHEDULE */
 
-.class-session h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    color: var(--main-text);
-}
+  .classes-page .schedule-grid {
+    flex-wrap: wrap;
 
-.class-session p {
-    color: var(--main-text);
-    margin-bottom: 5px;
-}
+    width: 90%;
+    max-width: 700px;
+  }
 
-.spots {
-    margin-top: 15px;
-    font-weight: bold;
-    color: #1f2937;
-}
-
-.schedule-button {
-    display: block;
-    background-color: var(--btn-text-color);
-    color: var(--hero-header-text);
-    text-align: center;
-    padding: 9px;
-    margin-top: 15px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.schedule-button:hover {
-    background-color: var(--main-text);
+  .classes-page .schedule-day {
+    width: 50%;
+    min-width: 0;
+  }
 }
 
 
-
-
-
-@media (max-width: 900px) {
-    .schedule-grid {
-        flex-wrap: wrap;
-    }
-
-    .schedule-day {
-        width: 50%;
-    }
-}
+/* 
+   MOBILE
+   600px AND BELOW
+   */
 
 @media (max-width: 600px) {
-    .schedule-day {
-        width: 100%;
-    }
+
+  /* HERO */
+
+  .classes-page .hero-images {
+    flex-wrap: wrap;
+  }
+
+  .classes-page .hero-images img {
+    width: 50%;
+    height: 210px;
+  }
+
+  .classes-page .hero-classes {
+    height: 420px;
+    overflow: hidden;
+  }
+
+  .classes-page .hero-classes-content {
+    bottom: 305px;
+    padding: 0 8%;
+    text-align: center;
+  }
+
+  .classes-page .hero-classes-content h1 {
+    font-size: 34px;
+  }
+
+  .classes-page .hero-classes-content p {
+    font-size: 16px;
+  }
+
+
+  /* TITLE */
+
+  .classes-page .class-title {
+    padding: 50px 8%;
+  }
+
+  .classes-page .class-title h2 {
+    font-size: 30px;
+  }
+
+
+  /* CLASS CARDS */
+
+  .classes-page .cards-classes {
+    flex-direction: column;
+    align-items: stretch;
+
+    width: calc(100% - 40px);
+
+    margin: 30px auto;
+  }
+
+  .classes-page .strength-training {
+    flex-direction: column;
+  }
+
+  .classes-page .cards-classes>a,
+  .classes-page .class-info {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .classes-page .cards-classes img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .classes-page .class-info {
+    padding: 25px 0;
+    text-align: left;
+  }
+
+  .classes-page .strength-class {
+    text-align: left;
+  }
+
+  .classes-page .class-details {
+    gap: 20px;
+  }
+
+  .classes-page .class-info button {
+    width: 100%;
+  }
+
+
+  /* SCHEDULE HEADINGS */
+
+  .classes-page .schedule-heading {
+    padding: 50px 8%;
+  }
+
+  .classes-page .inperson-heading,
+  .classes-page .classes-types {
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 8%;
+  }
+
+  .classes-page .inperson-heading p,
+  .classes-page .classes-types p {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  /* SCHEDULE */
+
+  .classes-page .schedule-grid {
+    flex-direction: column;
+
+    width: 90%;
+    max-width: 90%;
+  }
+
+  .classes-page .schedule-day {
+    width: 100%;
+    min-width: 0;
+
+    border-right: none;
+  }
+
+  .classes-page .class-session {
+    min-height: auto;
+    min-width: 0;
+
+    overflow-wrap: break-word;
+  }
 }
