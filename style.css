@@ -645,6 +645,11 @@ body > footer p {
     justify-content: space-between;
   }
 
+  .logo {
+    width: min(240px, 80vw);
+    height: auto;
+  }
+
   nav {
     display: none;
     flex-basis: 100%;
@@ -680,6 +685,72 @@ body > footer p {
 
   .menu-toggle:checked + .menu-button + nav {
     display: block;
+  }
+
+  .about-hero {
+    padding: 65px 6% 75px;
+  }
+
+  .about-hero h1 {
+    font-size: 40px;
+  }
+
+  .about-intro {
+    font-size: 18px;
+  }
+
+  .about-story,
+  .trust-grid,
+  .trainer-grid {
+    flex-direction: column;
+  }
+
+  .about-story > *,
+  .trust-grid > *,
+  .trainer-grid > * {
+    flex: 0 1 auto;
+  }
+
+  .about-story {
+    gap: 35px;
+  }
+
+  .about-story,
+  .trust-section,
+  .trainers-section {
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+
+  .about-story h2,
+  .section-heading h2 {
+    font-size: 32px;
+  }
+
+  .trust-section,
+  .trainers-section {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .trainer-card:last-child {
+    margin-inline: 0;
+    max-width: none;
+  }
+
+  .about-cta {
+    align-items: stretch;
+    flex-direction: column;
+    margin: 0 6% 70px;
+    padding: 30px;
+  }
+
+  .about-cta h2 {
+    font-size: 24px;
+  }
+
+  .about-cta .button {
+    text-align: center;
   }
 }
 .footer-nav a:hover {
@@ -890,5 +961,4 @@ body > footer p {
   .schedule-day {
     width: 100%;
   }
-
 }
