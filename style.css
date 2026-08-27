@@ -460,13 +460,13 @@ body>footer p {
     display: flex;
     max-width: 1200px;
     margin: auto;
-    border: 1px solid #d1d5db;
+    border: 1px solid var(--secondary-color);
 }
 
 .schedule-day {
     width: 20%;
-    background-color: #f9faf8;
-    border-right: 1px solid #d1d5db;
+    background-color: var(--hero-header-text);
+    border-right: 1px solid var(--secondary-color);
 }
 
 .schedule-day:last-child {
@@ -474,8 +474,8 @@ body>footer p {
 }
 
 .schedule-day>h3 {
-    background-color: #1f2937;
-    color: #f9faf8;
+    background-color: var(--main-text);
+    color: var(--hero-header-text);
     text-align: center;
     padding: 15px;
     font-size: 18px;
@@ -484,7 +484,7 @@ body>footer p {
 .class-session {
     padding: 20px 15px;
     min-height: 240px;
-    border-bottom: 1px solid #d1d5db;
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 .class-session:last-child {
@@ -492,7 +492,7 @@ body>footer p {
 }
 
 .class-time {
-    color: #3882f6;
+    color: var(--btn-text-color);
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 8px;
@@ -501,11 +501,11 @@ body>footer p {
 .class-session h4 {
     font-size: 18px;
     margin-bottom: 15px;
-    color: #1f2937;
+    color: var(--main-text);
 }
 
 .class-session p {
-    color: #6b7280;
+    color: var(--main-text);
     margin-bottom: 5px;
 }
 
@@ -517,8 +517,8 @@ body>footer p {
 
 .schedule-button {
     display: block;
-    background-color: #3882f6;
-    color: #f9faf8;
+    background-color: var(--btn-text-color);
+    color: var(--hero-header-text);
     text-align: center;
     padding: 9px;
     margin-top: 15px;
@@ -527,7 +527,7 @@ body>footer p {
 }
 
 .schedule-button:hover {
-    background-color: #1f2937;
+    background-color: var(--main-text);
 }
 
 
