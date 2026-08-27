@@ -856,8 +856,5 @@ body > footer p {
     }
 }
 
-@media (max-width: 600px) {
-    .schedule-day {
-        width: 100%;
-    }
+
 }
