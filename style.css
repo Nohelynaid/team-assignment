@@ -189,8 +189,6 @@ button:hover {
   padding: 20px 0;
   border-radius: 12px 12px 0 0;
 }
-
-
 aside {
   width: 350px;
   padding: 40px;
@@ -216,12 +214,14 @@ aside h3 {
 }
 
 .plans>h2 {
+.plans > h2 {
   font-size: 36px;
   color: var(--main-text);
   margin-bottom: 10px;
 }
 
 .plans>p {
+.plans > p {
   max-width: 650px;
   margin: 0 auto 50px;
   color: var(--main-text);
@@ -657,8 +657,188 @@ header {
 .footer-nav a:hover {
   color: var(--btn-text-color);
 }
+  .logo {
+    width: min(240px, 80vw);
+    height: auto;
+  }
 
+  .hero-content,
+  .hero figure,
+  .card-info,
+  .training-types,
+  .plans,
+  .plan-cards,
+  .plan-card,
+  .plan-cards figure {
+    width: 100%;
+  }
 
+  .hero-image,
+  .card-info img,
+  .card-info p,
+  .plan-img {
+    width: 100%;
+    height: auto;
+  }
+
+  nav {
+    display: none;
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  nav ul {
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .menu-button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 30px;
+  }
+
+  .menu-button span {
+    background-color: var(--hero-header-text);
+    display: block;
+    height: 3px;
+    width: 28px;
+  }
+
+  .menu-toggle:focus-visible + .menu-button {
+    outline: 2px solid var(--btn-text-color);
+    outline-offset: 4px;
+  }
+
+  .menu-toggle:checked + .menu-button + nav {
+    display: block;
+  }
+
+  .about-hero {
+    padding: 65px 6% 75px;
+  }
+
+  .about-hero h1 {
+    font-size: 40px;
+  }
+
+  .about-intro {
+    font-size: 18px;
+  }
+
+  .about-story,
+  .trust-grid,
+  .trainer-grid {
+    flex-direction: column;
+  }
+
+  .about-story > *,
+  .trust-grid > *,
+  .trainer-grid > * {
+    flex: 0 1 auto;
+  }
+
+  .about-story {
+    gap: 35px;
+  }
+
+  .about-story,
+  .trust-section,
+  .trainers-section {
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+
+  .about-story h2,
+  .section-heading h2 {
+    font-size: 32px;
+  }
+
+  .trust-section,
+  .trainers-section {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .trainer-card:last-child {
+    margin-inline: 0;
+    max-width: none;
+  }
+
+  .about-cta {
+    align-items: stretch;
+    flex-direction: column;
+    margin: 0 6% 70px;
+    padding: 30px;
+  }
+
+  .about-cta h2 {
+    font-size: 24px;
+  }
+
+  .about-cta .button {
+    text-align: center;
+  }
+
+  .training-options,
+  .plans {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .training-types,
+  .plan-cards {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  .plan-card {
+    max-width: 350px;
+  }
+
+  .footer-menu-button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0 auto 15px;
+    padding: 8px;
+    width: fit-content;
+  }
+
+  .footer-menu-button span {
+    background-color: var(--secondary-color);
+    display: block;
+    height: 3px;
+    width: 28px;
+  }
+
+  .footer-menu-toggle:focus-visible + .footer-menu-button {
+    outline: 2px solid var(--btn-text-color);
+    outline-offset: 4px;
+  }
+
+  .footer-nav {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer-menu-toggle:checked + .footer-menu-button + .footer-nav {
+    display: flex;
+  }
+}
+.footer-nav a:hover {
+  color: var(--btn-text-color);
+}
 
 /*CLASSES PAGE*/
 
@@ -747,6 +927,41 @@ header {
 .classes-page .class-info {
   width: 500px;
   max-width: 100%;
+}
+
+.class-title h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.class-title p {
+  font-size: 18px;
+}
+
+.cards-classes,
+.class-details {
+  display: flex;
+}
+
+.cards-classes {
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.cards-classes img {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.strength-training {
+  flex-direction: row-reverse;
+}
+
+.class-info {
+  width: 500px;
   padding: 30px 0;
   text-align: start;
 }
@@ -760,11 +975,21 @@ header {
 }
 
 .classes-page .class-details {
+.strength-class {
+  text-align: right;
+}
+
+.class-info h3 {
+  font-size: 24px;
+}
+
+.class-details {
   flex-direction: column;
   gap: 40px;
 }
 
 .classes-page .class-info button {
+.class-info button {
   margin-top: 40px;
 }
 
@@ -778,12 +1003,19 @@ header {
 }
 
 .classes-page .schedule-heading {
+.schedule-section {
+  background-color: var(--hero-header-text);
+}
+
+.schedule-heading {
   text-align: center;
   padding: 8% 0;
 }
 
 .classes-page .inperson-heading,
 .classes-page .classes-types {
+.inperson-heading,
+.classes-types {
   background-color: var(--main-text);
   color: var(--secondary-color);
   display: flex;
@@ -1069,6 +1301,98 @@ header {
   .classes-page .schedule-day {
     width: 50%;
     min-width: 0;
+.inperson-heading p,
+.classes-types p {
+  width: 400px;
+}
+
+.schedule-grid {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  border: 1px solid var(--secondary-color);
+}
+
+.schedule-day {
+  width: 20%;
+  background-color: var(--hero-header-text);
+  border-right: 1px solid var(--secondary-color);
+}
+
+.schedule-day:last-child {
+  border-right: none;
+}
+
+.schedule-day > h3 {
+  background-color: var(--main-text);
+  color: var(--hero-header-text);
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.class-session {
+  padding: 20px 15px;
+  min-height: 240px;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.class-session:last-child {
+  border-bottom: none;
+}
+
+.class-time {
+  color: var(--btn-text-color);
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.class-session h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: var(--main-text);
+}
+
+.class-session p {
+  color: var(--main-text);
+  margin-bottom: 5px;
+}
+
+.spots {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.schedule-button {
+  display: block;
+  background-color: var(--btn-text-color);
+  color: var(--hero-header-text);
+  text-align: center;
+  padding: 9px;
+  margin-top: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.schedule-button:hover {
+  background-color: var(--main-text);
+}
+
+@media (max-width: 900px) {
+  .schedule-grid {
+    flex-wrap: wrap;
+  }
+
+  .schedule-day {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .schedule-day {
+    width: 100%;
   }
 }
 
