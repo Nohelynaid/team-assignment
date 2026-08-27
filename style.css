@@ -180,25 +180,11 @@ button:hover {
   background-color: var(--main-text);
   border-radius: 0 0 12px 12px;
 }
-
-.training-options h2 {
-  background-color: var(--main-text);
-  font-size: 36px;
-  color: var(--hero-header-text);
-  padding: 20px 0;
-  border-radius: 12px 12px 0 0;
-}
-
 aside {
   width: 350px;
   padding: 40px;
   text-align: center;
   color: var(--hero-header-text);
-}
-
-aside h3 {
-  font-size: 24px;
-  margin: 30px 0 30px;
 }
 
 .btn-classes {
@@ -650,6 +636,25 @@ body > footer p {
     height: auto;
   }
 
+  .hero-content,
+  .hero figure,
+  .card-info,
+  .training-types,
+  .plans,
+  .plan-cards,
+  .plan-card,
+  .plan-cards figure {
+    width: 100%;
+  }
+
+  .hero-image,
+  .card-info img,
+  .card-info p,
+  .plan-img {
+    width: 100%;
+    height: auto;
+  }
+
   nav {
     display: none;
     flex-basis: 100%;
@@ -751,6 +756,26 @@ body > footer p {
 
   .about-cta .button {
     text-align: center;
+  }
+
+  .training-options,
+  .plans {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .training-types,
+  .plan-cards {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  .plan-card {
+    max-width: 350px;
   }
 }
 .footer-nav a:hover {
