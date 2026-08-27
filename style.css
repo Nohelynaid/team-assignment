@@ -777,6 +777,38 @@ body > footer p {
   .plan-card {
     max-width: 350px;
   }
+
+  .footer-menu-button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0 auto 15px;
+    padding: 8px;
+    width: fit-content;
+  }
+
+  .footer-menu-button span {
+    background-color: var(--secondary-color);
+    display: block;
+    height: 3px;
+    width: 28px;
+  }
+
+  .footer-menu-toggle:focus-visible + .footer-menu-button {
+    outline: 2px solid var(--btn-text-color);
+    outline-offset: 4px;
+  }
+
+  .footer-nav {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer-menu-toggle:checked + .footer-menu-button + .footer-nav {
+    display: flex;
+  }
 }
 .footer-nav a:hover {
   color: var(--btn-text-color);
