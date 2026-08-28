@@ -16,6 +16,7 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -180,11 +181,24 @@ button:hover {
   background-color: var(--main-text);
   border-radius: 0 0 12px 12px;
 }
+
+.training-options h2 {
+  background-color: var(--main-text);
+  font-size: 36px;
+  color: var(--hero-header-text);
+  padding: 20px 0;
+  border-radius: 12px 12px 0 0;
+}
 aside {
   width: 350px;
   padding: 40px;
   text-align: center;
   color: var(--hero-header-text);
+}
+
+aside h3 {
+  font-size: 24px;
+  margin: 30px 0 30px;
 }
 
 .btn-classes {
@@ -199,12 +213,14 @@ aside {
   padding: 80px 12%;
 }
 
+.plans>h2 {
 .plans > h2 {
   font-size: 36px;
   color: var(--main-text);
   margin-bottom: 10px;
 }
 
+.plans>p {
 .plans > p {
   max-width: 650px;
   margin: 0 auto 50px;
@@ -301,7 +317,7 @@ aside {
 
 /* FOOTER */
 
-body > footer {
+body>footer {
   background-color: var(--main-text);
   color: var(--secondary-color);
   text-align: center;
@@ -358,15 +374,15 @@ body > footer {
   gap: 70px;
 }
 
-.about-story > * {
+.about-story>* {
   flex: 1 1 0;
 }
 
-.about-story > :first-child {
+.about-story> :first-child {
   flex: 0.8 1 0;
 }
 
-.about-story > :last-child {
+.about-story> :last-child {
   flex: 1.2 1 0;
 }
 
@@ -401,8 +417,8 @@ body > footer {
   gap: 24px;
 }
 
-.trust-grid > *,
-.trainer-grid > * {
+.trust-grid>*,
+.trainer-grid>* {
   flex: 1 1 calc((100% - 48px) / 3);
 }
 
@@ -466,9 +482,11 @@ body > footer {
 .trainer-card h3 {
   margin-top: 8px;
 }
+
 .disclaimer {
   text-align: center;
 }
+
 .about-cta {
   align-items: center;
   background-color: var(--btn-text-color);
@@ -498,7 +516,7 @@ body > footer {
   color: var(--btn-text-color);
 }
 
-body > footer p {
+body>footer p {
   margin: 10px 0;
 }
 
@@ -519,6 +537,7 @@ body > footer p {
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
+
   header,
   .hero {
     padding-left: 6%;
@@ -547,12 +566,14 @@ body > footer p {
   .class-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem; /* optional spacing */
+    gap: 1rem;
+    /* optional spacing */
     padding: 0 6%;
   }
 
-  .class-cards > * {
-    flex: 1 1 50%; /* two columns */
+  .class-cards>* {
+    flex: 1 1 50%;
+    /* two columns */
   }
 
   .card-info img,
@@ -595,7 +616,7 @@ body > footer p {
     flex-wrap: wrap;
   }
 
-  .trainer-grid > * {
+  .trainer-grid>* {
     flex-basis: calc((100% - 24px) / 2);
   }
 
@@ -611,26 +632,31 @@ body > footer p {
 }
 
 @media (max-width: 600px) {
+
   header,
   .hero,
   .class-cards,
   .cta {
     flex-direction: column;
   }
+}
 
-  header,
-  .hero {
-    padding: 20px 6%;
-  }
+header,
+.hero {
+  padding: 20px 6%;
+}
 
-  header {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
+header {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
 
+.footer-nav a:hover {
+  color: var(--btn-text-color);
+}
   .logo {
     width: min(240px, 80vw);
     height: auto;
@@ -816,24 +842,31 @@ body > footer p {
 
 /*CLASSES PAGE*/
 
-.hero-images {
+
+/* HERO */
+
+.classes-page .hero-images {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  overflow: hidden;
 }
 
-.hero-images img {
-  width: 100%;
+.classes-page .hero-images img {
+  width: 25%;
   height: 500px;
   object-fit: cover;
   opacity: 0.5;
+  min-width: 0;
 }
 
-.hero-classes {
-  max-width: stretch;
+.classes-page .hero-classes {
+  width: 100%;
   height: 500px;
+  overflow: hidden;
 }
 
-.hero-classes-content {
+.classes-page .hero-classes-content {
   display: block;
   position: relative;
   bottom: 320px;
@@ -841,13 +874,59 @@ body > footer p {
   color: var(--main-text);
 }
 
-/* CLASSES SECTION */
 
-.class-title {
+/* 
+   CLASSES SECTION
+   */
+
+.classes-page .class-title {
   background-color: var(--main-text);
   text-align: center;
   padding: 5% 0 12% 0;
   color: var(--hero-header-text);
+}
+
+.classes-page .class-title h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.classes-page .class-title p {
+  font-size: 18px;
+}
+
+.classes-page .cards-classes,
+.classes-page .class-details {
+  display: flex;
+}
+
+.classes-page .cards-classes {
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.classes-page .cards-classes>a,
+.classes-page .class-info {
+  min-width: 0;
+}
+
+.classes-page .cards-classes img {
+  width: 500px;
+  height: 500px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.classes-page .strength-training {
+  flex-direction: row-reverse;
+}
+
+.classes-page .class-info {
+  width: 500px;
+  max-width: 100%;
 }
 
 .class-title h2 {
@@ -887,6 +966,15 @@ body > footer p {
   text-align: start;
 }
 
+.classes-page .strength-class {
+  text-align: right;
+}
+
+.classes-page .class-info h3 {
+  font-size: 24px;
+}
+
+.classes-page .class-details {
 .strength-class {
   text-align: right;
 }
@@ -900,12 +988,21 @@ body > footer p {
   gap: 40px;
 }
 
+.classes-page .class-info button {
 .class-info button {
   margin-top: 40px;
 }
 
-/*SCHEDULE SECTION*/
 
+/* 
+   SCHEDULE SECTION
+  */
+
+.classes-page .schedule-section {
+  background-color: var(--hero-header-text);
+}
+
+.classes-page .schedule-heading {
 .schedule-section {
   background-color: var(--hero-header-text);
 }
@@ -915,6 +1012,8 @@ body > footer p {
   padding: 8% 0;
 }
 
+.classes-page .inperson-heading,
+.classes-page .classes-types {
 .inperson-heading,
 .classes-types {
   background-color: var(--main-text);
@@ -925,6 +1024,283 @@ body > footer p {
   padding: 5%;
 }
 
+.classes-page .inperson-heading h2,
+.classes-page .classes-types h2,
+.classes-page .inperson-heading p,
+.classes-page .classes-types p {
+  min-width: 0;
+}
+
+.classes-page .inperson-heading p,
+.classes-page .classes-types p {
+  width: 400px;
+  max-width: 100%;
+}
+
+.classes-page .schedule-grid {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  border: 1px solid var(--secondary-color);
+}
+
+.classes-page .schedule-day {
+  width: 20%;
+  min-width: 0;
+  background-color: var(--hero-header-text);
+  border-right: 1px solid var(--secondary-color);
+}
+
+.classes-page .schedule-day:last-child {
+  border-right: none;
+}
+
+.classes-page .schedule-day>h3 {
+  background-color: var(--main-text);
+  color: var(--hero-header-text);
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.classes-page .class-session {
+  padding: 20px 15px;
+  min-height: 240px;
+  min-width: 0;
+  border-bottom: 1px solid var(--secondary-color);
+  overflow-wrap: break-word;
+}
+
+.classes-page .class-session:last-child {
+  border-bottom: none;
+}
+
+.classes-page .class-time {
+  color: var(--btn-text-color);
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.classes-page .class-session h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: var(--main-text);
+}
+
+.classes-page .class-session p {
+  color: var(--main-text);
+  margin-bottom: 5px;
+}
+
+.classes-page .spots {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.classes-page .schedule-button {
+  display: block;
+  background-color: var(--btn-text-color);
+  color: var(--hero-header-text);
+  text-align: center;
+  padding: 9px;
+  margin-top: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.classes-page .schedule-button:hover {
+  background-color: var(--main-text);
+}
+
+
+/*
+   SMALL DESKTOP
+   901px - 1460px
+  */
+
+@media (min-width: 901px) and (max-width: 1460px) {
+
+  /* HERO */
+
+  .classes-page .hero-classes {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .classes-page .hero-images {
+    width: 100%;
+  }
+
+  .classes-page .hero-images img {
+    width: 25%;
+    height: 500px;
+    min-width: 0;
+  }
+
+  .classes-page .hero-classes-content {
+    bottom: 320px;
+    padding: 0 12%;
+  }
+
+
+  /* TITLE */
+
+  .classes-page .class-title {
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+
+  /* CLASS CARDS */
+
+  .classes-page .cards-classes {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    gap: 30px;
+  }
+
+  .classes-page .cards-classes>a,
+  .classes-page .class-info {
+    width: 50%;
+    min-width: 0;
+  }
+
+  .classes-page .cards-classes img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+  }
+
+  .classes-page .class-info {
+    padding: 30px 0;
+  }
+
+
+  /* SCHEDULE HEADINGS */
+
+  .classes-page .inperson-heading,
+  .classes-page .classes-types {
+    width: 100%;
+    padding: 5% 8%;
+  }
+
+  .classes-page .inperson-heading p,
+  .classes-page .classes-types p {
+    width: 45%;
+  }
+
+
+  /* SCHEDULE */
+
+  .classes-page .schedule-grid {
+    width: 90%;
+    max-width: 1100px;
+  }
+
+  .classes-page .schedule-day {
+    min-width: 0;
+  }
+}
+
+
+/* 
+   TABLET
+   601px - 900px
+    */
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+  /* HERO */
+
+  .classes-page .hero-images {
+    flex-wrap: wrap;
+  }
+
+  .classes-page .hero-images img {
+    width: 50%;
+    height: 250px;
+  }
+
+  .classes-page .hero-classes {
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .classes-page .hero-classes-content {
+    bottom: 330px;
+    padding: 0 10%;
+  }
+
+
+  /* CLASS CARDS */
+
+  .classes-page .cards-classes {
+    flex-direction: column;
+    align-items: center;
+
+    width: calc(100% - 60px);
+    max-width: 700px;
+
+    margin: 40px auto;
+  }
+
+  .classes-page .strength-training {
+    flex-direction: column;
+  }
+
+  .classes-page .cards-classes>a,
+  .classes-page .class-info {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .classes-page .cards-classes img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .classes-page .class-info {
+    padding: 25px 0;
+    text-align: left;
+  }
+
+  .classes-page .strength-class {
+    text-align: left;
+  }
+
+
+  /* SCHEDULE HEADINGS */
+
+  .classes-page .inperson-heading,
+  .classes-page .classes-types {
+    padding: 40px 8%;
+  }
+
+  .classes-page .inperson-heading p,
+  .classes-page .classes-types p {
+    width: 50%;
+  }
+
+
+  /* SCHEDULE */
+
+  .classes-page .schedule-grid {
+    flex-wrap: wrap;
+
+    width: 90%;
+    max-width: 700px;
+  }
+
+  .classes-page .schedule-day {
+    width: 50%;
+    min-width: 0;
 .inperson-heading p,
 .classes-types p {
   width: 400px;
@@ -1017,5 +1393,144 @@ body > footer p {
 @media (max-width: 600px) {
   .schedule-day {
     width: 100%;
+  }
+}
+
+
+/* 
+   MOBILE
+   600px AND BELOW
+   */
+
+@media (max-width: 600px) {
+
+  /* HERO */
+
+  .classes-page .hero-images {
+    flex-wrap: wrap;
+  }
+
+  .classes-page .hero-images img {
+    width: 50%;
+    height: 210px;
+  }
+
+  .classes-page .hero-classes {
+    height: 420px;
+    overflow: hidden;
+  }
+
+  .classes-page .hero-classes-content {
+    bottom: 305px;
+    padding: 0 8%;
+    text-align: center;
+  }
+
+  .classes-page .hero-classes-content h1 {
+    font-size: 34px;
+  }
+
+  .classes-page .hero-classes-content p {
+    font-size: 16px;
+  }
+
+
+  /* TITLE */
+
+  .classes-page .class-title {
+    padding: 50px 8%;
+  }
+
+  .classes-page .class-title h2 {
+    font-size: 30px;
+  }
+
+
+  /* CLASS CARDS */
+
+  .classes-page .cards-classes {
+    flex-direction: column;
+    align-items: stretch;
+
+    width: calc(100% - 40px);
+
+    margin: 30px auto;
+  }
+
+  .classes-page .strength-training {
+    flex-direction: column;
+  }
+
+  .classes-page .cards-classes>a,
+  .classes-page .class-info {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .classes-page .cards-classes img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .classes-page .class-info {
+    padding: 25px 0;
+    text-align: left;
+  }
+
+  .classes-page .strength-class {
+    text-align: left;
+  }
+
+  .classes-page .class-details {
+    gap: 20px;
+  }
+
+  .classes-page .class-info button {
+    width: 100%;
+  }
+
+
+  /* SCHEDULE HEADINGS */
+
+  .classes-page .schedule-heading {
+    padding: 50px 8%;
+  }
+
+  .classes-page .inperson-heading,
+  .classes-page .classes-types {
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 8%;
+  }
+
+  .classes-page .inperson-heading p,
+  .classes-page .classes-types p {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  /* SCHEDULE */
+
+  .classes-page .schedule-grid {
+    flex-direction: column;
+
+    width: 90%;
+    max-width: 90%;
+  }
+
+  .classes-page .schedule-day {
+    width: 100%;
+    min-width: 0;
+
+    border-right: none;
+  }
+
+  .classes-page .class-session {
+    min-height: auto;
+    min-width: 0;
+
+    overflow-wrap: break-word;
   }
 }
