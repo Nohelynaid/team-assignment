@@ -682,14 +682,18 @@ body > footer p {
     height: 3px;
     width: 28px;
   }
-
+  /* When the hidden checkbox (menu-toggle) is focused
+   in a way that should be visible (usually by keyboard users),
+   highlight the hamburger button so people can see where they are. */
   .menu-toggle:focus-visible + .menu-button {
     outline: 2px solid var(--btn-text-color);
     outline-offset: 4px;
   }
-
+  /* When the hidden checkbox is checked (meaning the user clicked the hamburger),
+   show the navigation menu. This works because the nav element comes
+   right after the menu button in the HTML structure. */
   .menu-toggle:checked + .menu-button + nav {
-    display: block;
+    display: block; /* Reveal the menu */
   }
 
   .about-hero {
